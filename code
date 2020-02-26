@@ -1,0 +1,1 @@
+purrr::map_dfr(ls(envir=.GlobalEnv),~tibble(object_name = .,object_class=class(get(.))[[1]]))
